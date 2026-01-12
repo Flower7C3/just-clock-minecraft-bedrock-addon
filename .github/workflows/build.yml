@@ -19,5 +19,4 @@ jobs:
     with:
       project_name: "Just clock"
       has_test_workflow: false
-      total_blocks: false
     secrets: inherit
