@@ -1,0 +1,17 @@
+{
+  "name": "minecraft-scripting-samples",
+  "workspaces": [
+    "*"
+  ],
+  "scripts": {
+    "build": "npm run build -ws",
+    "mcaddon": "npm run mcaddon -ws"
+  },
+  "overrides": {},
+  "devDependencies": {
+    "@minecraft/core-build-tasks": "^5.2.0"
+  },
+  "dependencies": {
+    "@minecraft/server": "^2.4.0"
+  }
+}
