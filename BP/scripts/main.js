@@ -6,7 +6,7 @@ world, system, StartupEvent, CommandPermissionLevel, CustomCommandParamType, Cus
 system.beforeEvents.startup.subscribe((initEvent) => {
     const commandRegistry = initEvent.customCommandRegistry;
     commandRegistry.registerCommand({
-        name: "just-clock:time",
+        name: "just-clock:whats-time",
         description: "Display current time",
         permissionLevel: CommandPermissionLevel.Any,
     }, (origin) => {
@@ -19,7 +19,7 @@ system.beforeEvents.startup.subscribe((initEvent) => {
         };
     });
     commandRegistry.registerCommand({
-        name: "just-clock:moon",
+        name: "just-clock:whats-moon-phase",
         description: "Display current moon phase",
         permissionLevel: CommandPermissionLevel.Any,
     }, (origin) => {
@@ -82,13 +82,13 @@ function getDayStage(tick){
 
 function getMoonPhase(){
 	switch(world.getMoonPhase()){
-		case 0: return "full moon"; // 🌕
-		case 1: return "waning gibbous"; // 🌖
-		case 2: return "third quarter"; // 🌗
-		case 3: return "waning crescent"; // 🌘
-		case 4: return "new moon"; // 🌑
-		case 5: return "waxing crescent"; // 🌒
-		case 6: return "first quarter"; // 🌓
-		case 7: return "waxing gibbous"; // 🌔
+		case 0: return "full moon [1]"; // 🌕
+		case 1: return "waning gibbous [³⁄₄ → 0]"; // 🌖
+		case 2: return "third quarter [²⁄₄ → 0]"; // 🌗
+		case 3: return "waning crescent [¼ → 0]"; // 🌘
+		case 4: return "new moon [0]"; // 🌑
+		case 5: return "waxing crescent [¹⁄₄ → 1]"; // 🌒
+		case 6: return "first quarter [²⁄₄ → 1]"; // 🌓
+		case 7: return "waxing gibbous [³⁄₄ → 1]"; // 🌔
 	}
 }
