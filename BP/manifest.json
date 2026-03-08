@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Just Time",
-    "description": "display time and moon info",
+    "name": "pack.name",
+    "description": "pack.description",
     "uuid": "5838d336-c196-4b1b-d52e-df180f23d23a",
     "version": [
       1,
