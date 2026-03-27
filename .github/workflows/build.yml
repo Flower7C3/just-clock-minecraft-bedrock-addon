@@ -18,5 +18,5 @@ jobs:
     uses: Flower7C3/minecraft-addon-workflows/.github/workflows/build-and-release.yml@main
     with:
       project_name: "Just clock"
-      has_test_workflow: false
+      has_test_workflow: true
     secrets: inherit
