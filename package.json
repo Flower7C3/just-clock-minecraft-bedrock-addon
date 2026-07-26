@@ -12,6 +12,6 @@
     "@minecraft/core-build-tasks": "^5.2.0"
   },
   "dependencies": {
-    "@minecraft/server": "^2.4.0"
+    "@minecraft/server": "^2.8.0"
   }
 }
